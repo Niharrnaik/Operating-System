@@ -90,3 +90,23 @@ void main()
     }
     fcfs(processes,n,burst_time,arrival_time);
 }
+/* OUTPUT
+-----------------------------------------------------------------
+    Enter the number of processes: 4
+Enter the arrival time for process 1:2
+Enter the Burst time for processes 1:1
+Enter the arrival time for process 2:1
+Enter the Burst time for processes 2:5
+Enter the arrival time for process 3:4
+Enter the Burst time for processes 3:1
+Enter the arrival time for process 4:0
+Enter the Burst time for processes 4:6
+FCFS agorithm
+Processes       AT      BT      WT      TAT     CT      RT
+4               0       6       0       6       6       0
+2               1       5       5       10      11      5
+1               2       1       9       10      12      9
+3               4       1       8       9       13      8
+AVG waiting time: 5.500000
+AVG turnaround time: 8.750000  
+Total Idle time: 0  */
