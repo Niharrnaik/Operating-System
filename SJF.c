@@ -90,3 +90,25 @@ void main()
     }
     sjf(processes,n,burst_time,arrival_time);
 }
+/*
+OUTPUT
+-------------------------------------------------------------
+    
+Enter the number of processes: 4
+Enter the arrival time for process 1:2
+Enter the Burst time for processes 1:1
+Enter the arrival time for process 2:1
+Enter the Burst time for processes 2:5
+Enter the arrival time for process 3:4
+Enter the Burst time for processes 3:1
+Enter the arrival time for process 4:0
+Enter the Burst time for processes 4:6
+SJF agorithm
+Processes       AT      BT      WT      TAT     CT      RT
+1               2       1       0       1       3       0
+3               4       1       0       1       5       0
+2               1       5       4       9       10      4
+4               0       6       10      16      16      10
+AVG waiting time: 3.500000
+AVG turnaround time: 6.750000
+Total Idle time: 3   */
