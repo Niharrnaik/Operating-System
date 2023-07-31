@@ -2,9 +2,7 @@
 #include<stdlib.h>
 int main()
 {
-    int RQ[100] i,j,n,TotalHeadMoment=0,initial,size,move;
-    printf("enter the number of requests\n")
-}
+    int RQ[100] ,i,j,n,TotalHeadMoment=0,initial,size,move;
 printf("enter the requests sequence\n");
 for(i=0;i<n;i++)
 scanf("%d",RQ[i]);
@@ -28,4 +26,31 @@ for(i=0;i<n;i++)
 }
 }
 int index;
-for(i=0;i<n;)
+for(i=0;i<n;i++)
+{
+    if(initial<RQ[i])
+    {
+        index=i;
+        break;
+    }
+    }
+    if(move==1)
+    {
+        printf("sequequence of request access:\n");
+        for(i=index;i<n;i++)
+        {
+            printf("%d",RQ[i]);
+            TotalHeadMoment=TotalHeadMoment+abs(RQ[i]-initial);
+            initial=size-1;
+            for(i=index-1;i>=0;i--)
+            {
+                printf("%d",RQ[i]);
+                TotalHeadMoment=TotalHeadMoment+abs(RQ[i]-initial);
+                initial=RQ[i];
+            }
+            TotalHeadMoment=TotalHeadMoment+abs(RQ[i]=initial);
+            initial=RQ[i];
+        }
+    }
+            }
+       
